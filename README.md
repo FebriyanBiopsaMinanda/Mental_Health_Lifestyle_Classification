@@ -57,4 +57,6 @@ Beberapa variabel utama yang digunakan:
 Hasil evaluasi model ditampilkan dalam bentuk **confusion matrix** dan **classification report**.  
 - **SVM** → Akurasi 28% (cukup baik mengenali PTSD)  
 - **Random Forest** → Akurasi 24% (lebih baik pada Depression, tapi cenderung overfitting)  
-- **Logistic Regression** → Akurasi 24% (cukup baik mengenali Anxiety,
+- **Logistic Regression** → Akurasi 24% (cukup baik mengenali Anxiety)
+
+Secara umum, Logistic Regression lebih mampu mengenali Anxiety, namun kesulitan pada Depression. Hal ini diduga karena hubungan antar variabel dalam dataset tidak linear, sementara Logistic Regression hanya bisa memodelkan hubungan linear, sehingga pola kompleks antar fitur kurang terwakili.
